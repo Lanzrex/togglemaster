@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Olanrewaju]</title>
+
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+<body style="background-color: rgb(255, 247, 247); height: 600px; width: 100%;">
+
+<div src="./images/bg-top.svg" style="height: 100px; width: 100px; position: absolute; top:0; right: 0;"></div>
+  <div src="./images/bg-bottom.svg" style="height: 100px; width: 100px; position: absolute; bottom:0; left: 0;"></div>
+
+<div style="margin-top: 70px;">
+  <h1 style="text-align:center;">Our Pricing</h1>
+  <div class="wholetoggle">
+    <span class="toggletext">Annually</span>
+    <label class="switch">
+    <input type="checkbox" onclick="change()">
+  <span class="switch2"></span>
+    </label>
+    <span class="toggletext">Monthly</span>
+  </div>
+
+<div class="displays">
+  <div class="display1">
+  <p class="text1">Basic</p>
+  <h1 id="change1">&dollar;19.99</h1>
+  <p class="text1">500 GB Storage</p>
+  <hr style="color: black; margin: 0 15px;">
+  <p class="text1">2 Users Allowed</p>
+  <hr style="color: black; margin: 0 15px;">
+  <p class="text1">Send up to 3 GB</p>
+  <hr style="color: black; margin: 0 15px;">
+  <a href="#" class="learn"><b>LEARN MORE</b></a>
+  </div>
+
+ <div class="display2">
+  <p class="text2"><b>Professional</b></p>
+  <h1 id="change2">&dollar;24.99</h1>
+  <p class="text2"><b>1 TB Storage</b></p>
+  <hr style="color: white; margin: 0 15px;">
+  <p class="text2">5 Users Allowed</p>
+  <hr style="color: white; margin: 0 15px;">
+  <p class="text2">Send up to 10 GB</p>
+  <hr style="color: white; margin: 0 15px;">
+  <a href="#" class="learn2"><b>LEARN MORE</b></a>
+ </div>
+ 
+ <div class="display3">
+  <p class="text1">Master</p>
+  <h1 id="change3">&dollar;39.99</h1>
+  <p class="text1">2 TB Storage</p>
+  <hr style="color: black; margin: 0 15px;">
+  <P class="text1">10 Users Allowed</p>
+    <hr style="color: black; margin: 0 15px;">
+  <p class="text1">Send up to 20 GB</p>
+  <hr style="color: black; margin: 0 15px;">
+  <a href="#" class="learn"><b>LEARN MORE</b></a>
+  </div>
+</div>
+
+<script>
+  function change() {
+    document.getElementById("change1").innerHTML= "&dollar;199.99";
+    document.getElementById("change2").innerHTML= "&dollar;249.99";
+    document.getElementById("change3").innerHTML= " &dollar;399.99";
+  }
+</script>
+
+  <footer class="attribution">
+  <div >
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Olanrewaju</a>.
+  </div>
+</footer>
+</div>
+</body>
+</html>
